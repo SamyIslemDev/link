@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Avenir LT Std';
+}
+@font-face {
+    font-family: 'Avenir LT Std';
+    src: url("Avenir LT Std/Avenir LT STD 65 Medium/Avenir LT Std 65 Medium.otf");
+}
+.RendezVous-box {
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.RendezVous-card {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 90%;
+    height: 650px;
+    justify-content: center;
+    align-items: center;
+    background: #C9ADA7;
+    border-radius: 40px;
+}
+.RendezVous-information {
+    overflow: hidden;
+    position: relative;
+    width: 95%;
+    height: 525px;
+    background: #F2E9E4;
+    border-radius: 30px;
+}
+
+.RendezVous{
+    overflow: hidden;
+    position: relative;
+    width: 45%;
+    height: 96%;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    background: #22223B;
+    border-radius: 30px;
+    padding: 25px 0 0 45px;
+
+}
+.RendezVous .RendezVous-title {
+    position: inherit;
+    width: 90%;
+}
+.RendezVous .RendezVous-title h1{
+    position: relative;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    color: #F2E9E4;
+    text-align: left;
+    top: -7px;
+}
+
+.RendezVous .RendezVous-title p {
+    position: relative;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #C9ADA7;
+    text-align: left;
+}
+
+.RendezVous-phone {
+    position: relative;
+    top: 90px;
+}
+
+.RendezVous-phone .fa-solid {
+    display: inline-block;
+    color: #C9ADA7;
+    size: 20px;
+    margin-right: 15px;
+}
+
+.RendezVous-phone p {
+    display: inline-block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #F2E9E4;
+}
+
+.RendezVous-email {
+    position: relative;
+    top: 110px;
+}
+
+.RendezVous-email .fa-solid {
+    color: #C9ADA7;
+    size: 20px;
+    margin-right: 15px;
+}
+
+.RendezVous-email p {
+    display: inline-block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #F2E9E4;
+}
+
+.RendezVous-location {
+    position: relative;
+    top: 130px;
+}
+
+.RendezVous-location .fa-solid {
+    color: #C9ADA7;
+    size: 20px;
+    margin-right: 15px;
+}
+
+.RendezVous-location p {
+    display: inline-block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #F2E9E4;
+}
+
+.RendezVous-BigCircle {
+    position: absolute;
+    background: #C9ADA7;
+    width: 52%;
+    height: 53%;
+    border-radius: 50%;
+    right: -18%;
+    bottom: -25%;
+}
+
+.RendezVous-SmallCircle {
+    position: absolute;
+    background: #4A4E69;
+    width: 23%;
+    height: 25%;
+    border-radius: 50%;
+    right: 9%;
+    bottom: 9%;
+    transition: all 0.3s ease;
+}
+
+.RendezVous-logo{
+    position: absolute;
+    width: 80px;
+    height: 73px;
+    right: 19%;
+    bottom: 22%;
+    visibility: hidden;
+    transition: all 0.15s ease;
+}
+
+.RendezVous-SmallCircle:hover {
+    box-shadow: 0px 0px 200px #4A4E69;
+}
+
+.RendezVous-SmallCircle:hover .RendezVous-logo {
+    visibility: visible;
+}
+
+.RendezVous-SocialMedia {
+    position: absolute;
+    bottom: 45px;
+    left: 35%;
+    transform: translateX(-50%);
+    cursor: default;
+}
+
+.RendezVous-SocialMedia a {
+    color: #C9ADA7;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.RendezVous-FormInfo {
+    display: inline-block;
+    position: relative;
+    width: 45.5%;
+    height: 96%;
+    top: 50%;
+    right: -6%;
+    transform: translateY(-50%);
+}
+
+.RendezVous-FormInfo .RendezVous-form {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.RendezVous-FullName, .RendezVous-AppointmentDate, .RendezVous-Team, .RendezVous-PhoneNumber {
+    position: relative;
+    display: inline-block;
+    width: 45%;
+}
+
+.RendezVous-FullName input, .RendezVous-AppointmentDate input, .RendezVous-Team input, .RendezVous-PhoneNumber input {
+    width: 100%;
+    height: 36px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #22223B;
+    outline: none;
+    color: #22223B;
+    font-size: 19px;
+    margin-right: 1px;
+}
+
+.RendezVous-FullName label, .RendezVous-AppointmentDate label, .RendezVous-Team label, .RendezVous-PhoneNumber label {
+    position: absolute;
+    bottom: 5px;
+    color: rgba(34, 34, 59, .7);
+    font-weight: 350;
+    font-size: 22px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.RendezVous-FullName input:focus ~ label, .RendezVous-FullName input:valid ~ label,
+.RendezVous-AppointmentDate input:focus ~ label, .RendezVous-AppointmentDate input:valid ~ label,
+.RendezVous-Team input:focus ~ label, .RendezVous-Team input:valid ~ label,
+.RendezVous-PhoneNumber input:focus ~ label, .RendezVous-PhoneNumber input:valid ~ label {
+    transform: translateY(-25px);
+    font-size: 15px;
+}
+
+.RendezVous-FullName, .RendezVous-AppointmentDate, .RendezVous-Team, .RendezVous-PhoneNumber {
+    margin-top: 7%;
+}
+.RendezVous-FullName {
+    margin-right: 50px;
+}
+
+.RendezVous-Team {
+    margin-right: 50px;
+}
+
+.RendezVous-form textarea{
+    position: relative;
+    top: 15%;
+    width: 100%;
+    height: 30%;
+    font-size: 17px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #22223B;
+    outline: none;
+    resize: none;
+}
+
+.RendezVous-form textarea::placeholder {
+    font-size: 23px;
+}
+
+.RendezVous-form .RendezVous-request {
+    position: absolute;
+    right: 0;
+    height: 11%;
+    bottom: 7%;
+    background: #22223B;
+    border-radius: 15px;
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.RendezVous-form .RendezVous-request input {
+    width: 90%;
+    height: 100%;
+    position: relative;
+    font-style: normal;
+    font-weight: 350;
+    font-size: 20px;
+    line-height: 30px;
+    background: transparent;
+    color: #F2E9E4;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+.Appointments{
+    z-index: 10000000000000000000000000000;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    /* display: none; */
+}
+
+
+.toggle{
+    display: none;
+}
+
+.Appoin{
+    width: 100%;
+
+}
